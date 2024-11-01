@@ -49,11 +49,15 @@ This Flask application utilizes the Pegasus Transformer model by Google for cond
 ```plaintext
 Text-Summarization-Webapp/
 │
-├── app.py                  # Main Flask application
 ├── templates/
-│   └── index.html          # Main HTML file
-│   └── index.html          # Main HTML file
-└── README.md               # This README file
+│   └── index.html          # HTML file for text input
+│   └── output.html         # Output file for a output of summarisation
+├── venv                    # Virtual environment
+├── README.md               # This README file
+├── app.py                  # Main Flask application
+└── requirements.txt        # requirement file
+
+
 ```
 
 ## Contributing
