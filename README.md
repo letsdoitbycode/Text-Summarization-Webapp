@@ -6,6 +6,8 @@
 - Python >= 3.10
 - Flask
 - Transformers
+- gunicorn
+- sentencepiece
 
 ### Installation
 1. Clone the repository
