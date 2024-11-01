@@ -1,6 +1,17 @@
+# Text Summarization Project with Flask and Pegasus Transformer
+
+This Flask application utilizes the Pegasus Transformer model by Google for conditional text summarization. It allows users to input large text and receive a concise summary, making it ideal for processing articles, reports, or any long-form text data.
+
 ### Features
-- Enter text directly into the text area to generate a summary.
-- Flashy and interactive UI elements for an engaging user experience.
+- Text Summarization: Uses the PegasusForConditionalGeneration model to generate a summary for the input text.
+- CUDA Optimization: Leverages CUDA if available, allowing for faster summarization on GPU devices.
+- Responsive Web Interface: The application provides a user-friendly interface with index.html for input and output.html to display results.
+
+### How It Works
+- Input: The user submits text via a form on the home page.
+- Text Tokenization: The input text is tokenized and encoded for the Pegasus model.
+- Summarization: The model generates a summary with specified minimum and maximum length constraints.
+- Output: The summary is decoded and displayed on the output page.
 
 ### Requirement 
 - Python >= 3.10
@@ -8,12 +19,13 @@
 - Transformers
 - gunicorn
 - sentencepiece
+- torch
 
 ### Installation
 1. Clone the repository
    ```sh
-   git clone https://github.com/Kabilduke/Text_Summarizer_BART.git
-   cd Text_Summarizer_BART
+   git clone https://github.com/letsdoitbycode/Text-Summarization-Webapp.git
+   cd Text-Summarization-Webapp
    ```
 
 3. Create a virtual environment and activate it:
@@ -24,7 +36,8 @@
 
 3. Install the required packages:
    ```sh
-   pip install flask PyPDF2 transformers
+   pip install flask transformers torch sentencepiece gunicorn
+   pip install requirements.txt   #else you can do this directly
    ```
    
 4. Run the Flask app:
@@ -34,14 +47,12 @@
 
 ### Project Structure
 ```plaintext
-Text_summarizer_BART/
+Text-Summarization-Webapp/
 │
 ├── app.py                  # Main Flask application
 ├── templates/
 │   └── index.html          # Main HTML file
-├── static/
-│   ├── style.css           # CSS styles
-├── uploads/                # Directory to store uploaded PDF files
+│   └── index.html          # Main HTML file
 └── README.md               # This README file
 ```
 
