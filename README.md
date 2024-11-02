@@ -62,3 +62,13 @@ Text-Summarization-Webapp/
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
+
+
+## DEMP APPLICATION
+----
+
+![Screenshot (12)](https://github.com/user-attachments/assets/a7b72e3d-6fa9-418c-9524-87b3f663f4b5)
+
+![Screenshot 2024-11-02 190135](https://github.com/user-attachments/assets/3105b48d-b395-4996-98f1-16632f2fc715)
+
+
